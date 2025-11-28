@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Тестировщик - Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Предзагрузка жирных шрифтов (скрытый элемент) -->
+    <div style="position:absolute;opacity:0;pointer-events:none;" aria-hidden="true">
+        <span style="font-family:'Anonymous Pro';font-weight:700;">.</span>
+        <span style="font-family:'Ubuntu';font-weight:700;">.</span>
+    </div>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span class="header-title">портфолио</span>
+            <div class="window-controls">
+                <span class="win-btn minimize">─</span>
+                <span class="win-btn close">×</span>
+            </div>
+        </div>
+
+        <div class="terminal-body">
+            <section>
+                <div class="command" data-target="about">
+                    <span class="prompt">user@portfolio ></span>
+                    <span class="cmd">обо_мне</span>
+                </div>
+                <div class="output hidden" id="about">
+                    <p class="name">Тэмуужин Лхаасурэндорж</p>
+                    <p class="accent-sub">или просто Тимофей</p>
+                    <p class="title">QA Engineer (Manual + Automation)</p>
+                    <p>Специализируюсь на ручном и автоматизированном тестировании.</p>
+                    <p class="btn-row"><a href="https://github.com/kinsyxd" target="_blank" class="cta-btn"><span class="arrow">< </span><img src="icons/github.webp" alt="GitHub">GitHub<span class="arrow"> ></span></a></p>
+                </div>
+            </section>
+
+            <section>
+                <div class="command" data-target="skills">
+                    <span class="prompt">user@portfolio ></span>
+                    <span class="cmd">навыки</span>
+                </div>
+                <div class="output hidden" id="skills">
+                    <ul>
+                        <li><strong>Инструменты:</strong> Postman, Charles Proxy, DevTools, Android Studio, Git, Swagger.</li>
+                        <li><strong>Тест-дизайн:</strong> Чек-листы, тест-кейсы, баг-репорты, попарное тестирование, таблицы решений.</li>
+                        <li><strong>Python:</strong> Pytest, Requests, принципы ООП.</li>
+                        <li><strong>SQL:</strong> Базовые запросы.</li>
+                        <li><strong>API:</strong> REST, JSON, XML.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="command" data-target="practice">
+                    <span class="prompt">user@portfolio ></span>
+                    <span class="cmd">практика</span>
+                </div>
+                <div class="output hidden" id="practice">
+                    <p class="accent">[ «Помоги лично» — Благотворительная платформа ]</p>
+                    <p class="dim">QA Engineer (API Manual) | Swagger/OpenAPI, Postman, Google Sheets</p>
+                    <p><strong>Документация:</strong> в команде составил тестовую документацию для API, 100% покрытие эндпоинтов.</p>
+                    <p><strong>API-тестирование:</strong> полный цикл тестирования бэкенда, выявление критических ошибок до релиза.</p>
+                    <p><strong>Процессы:</strong> cross-review документации коллег (QA UI/API).</p>
+                    <p><strong>Коммуникация:</strong> презентация результатов тестирования заказчику.</p>
+                    
+                    <p class="divider">-----------------------------</p>
+                    
+                    <p class="accent">[ Яндекс.Практикум ]</p>
+                    <p class="dim">QA Engineer (Manual + Automation) | Python, Pytest, Postman, Charles, Android Studio, DevTools</p>
+                    <p><strong>Тест-дизайн:</strong> Pairwise, таблицы принятия решений, Mind-maps.</p>
+                    <p><strong>Автоматизация:</strong> автотесты на Python (Pytest) для API.</p>
+                    <p><strong>Мобильное тестирование:</strong> Android Studio, Charles Proxy (сниффинг, подмена ответов, Throttling).</p>
+                    <p><strong>Документация:</strong> баг-репорты, чек-листы, тест-кейсы.</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="command" data-target="projects">
+                    <span class="prompt">user@portfolio ></span>
+                    <span class="cmd">проекты</span>
+                </div>
+                <div class="output hidden" id="projects">
+                    <p class="accent">[ Справочник лекарственных препаратов (ВКР) ]</p>
+                    <p class="dim">Fullstack Developer QA | Python, Flask</p>
+                    <p><strong>Разработка:</strong> веб-приложение на Flask.</p>
+                    <p><strong>Алгоритмы:</strong> логика обработки данных на Python.</p>
+                    <p><strong>Тестирование:</strong> white box testing алгоритма и веб-интерфейса.</p>
+                    
+                    <p class="divider">-----------------------------</p>
+                    
+                    <p class="accent">[ Модификации для Minecraft ]</p>
+                    <p class="dim">Java Developer / Technical QA | Java, Gradle, Git</p>
+                    <p><strong>Разработка:</strong> программирование игровой логики и механик на Java.</p>
+                    <p><strong>Совместимость:</strong> Integration Testing для выявления конфликтов с модами сторонних разработчиков.</p>
+                    <p><strong>Веб:</strong> сайт kinsy.ru для дистрибуции обновлений и Release Notes.</p>
+                    <p class="btn-row"><a href="https://kinsy.ru" target="_blank" class="cta-btn"><span class="arrow">< </span>kinsy.ru<span class="arrow"> ></span></a></p>
+                    
+                    <p class="divider">-----------------------------</p>
+                    
+                    <p class="accent">[ ReddiTG ]</p>
+                    <p class="dim">Python Developer | Python, Telegram API, Reddit API</p>
+                    <p>Бот для парсинга Reddit с интеграцией Telegram.</p>
+                    <p class="btn-row"><a href="https://github.com/kinsyxd/ReddiTG" target="_blank" class="cta-btn"><span class="arrow">< </span>GitHub<span class="arrow"> ></span></a></p>
+                    
+                    <p class="divider">-----------------------------</p>
+                    
+                    <p class="accent">[ Это портфолио ]</p>
+                    <p class="dim">Frontend | HTML5, CSS, JavaScript</p>
+                    <p>Портфолио в стиле терминала.</p>
+                    <p class="btn-row"><a href="https://github.com/kinsyxd/portfolio" target="_blank" class="cta-btn"><span class="arrow">< </span>GitHub<span class="arrow"> ></span></a></p>
+                </div>
+            </section>
+
+            <section>
+                <div class="command" data-target="experience">
+                    <span class="prompt">user@portfolio ></span>
+                    <span class="cmd">опыт</span>
+                </div>
+                <div class="output hidden" id="experience">
+                    <p class="accent">[ SMM-менеджер / Content Manager — lootkeeper.com ]</p>
+                    <p class="dim">Ключевое достижение:</p>
+                    <p><strong>Автоматизация:</strong> разработал Telegram-бота ReddiTG на Python для парсинга Reddit.</p>
+                    <p><strong>Результат:</strong> ускорение поиска контента и создания новостей в 2 раза.</p>
+                    <p class="dim">Обязанности:</p>
+                    <p><strong>Перевод:</strong> технической документации и игровой терминологии (Eng → Ru).</p>
+                    <p><strong>Видеоконтент:</strong> Adobe Premiere, CapCut. Работа с комьюнити.</p>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="terminal-footer">
+            <div class="footer-box">
+                <div class="cta-buttons">
+                    <a href="https://t.me/your_telegram" target="_blank" class="cta-btn">
+                        <span class="arrow">< </span><img src="icons/telegram.webp" alt="Telegram">Telegram<span class="arrow"> ></span>
+                    </a>
+                    <a href="mailto:your@email.com" target="_blank" class="cta-btn">
+                        <span class="arrow">< </span><img src="icons/email.webp" alt="Email">E-mail<span class="arrow"> ></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
