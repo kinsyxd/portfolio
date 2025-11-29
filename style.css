@@ -221,7 +221,6 @@ a:hover { color: var(--text-bright); }
 
 .cta-btn:hover {
     color: var(--accent-hover);
-    text-shadow: var(--glow-hover);
     background: rgb(255, 255, 255);
 }
 
@@ -245,7 +244,7 @@ a:hover { color: var(--text-bright); }
 }
 
 .cta-btn:hover img {
-    filter: drop-shadow(var(--glow-hover)) var(--icon-filter-hover);
+    filter: var(--icon-filter-hover);
 }
 
 
