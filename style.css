@@ -254,18 +254,18 @@ a:hover { color: var(--text-bright); }
 @media (max-width: 600px) {
     .terminal {
         width: 100%;
-        height: 100vh;
+        height: 100dvh;
         border-radius: 0;
         border: none;
     }
-    .terminal-header { font-size: 25px; }
-    .terminal-body { padding: 15px; font-size: 25px; }
+    .terminal-header { font-size: 22px; }
+    .terminal-body { padding: 15px; font-size: 22px; }
     .terminal-footer { padding: 10px 15px; }
-    .output { font-size: 21px; }
-    .name { font-size: 25px; }
-    .title { font-size: 21px; }
-    .cta-btn { font-size: 25px; }
-    .cta-btn img { width: 24px; height: 24px; }
+    .output { font-size: 18px; }
+    .name { font-size: 22px; }
+    .title { font-size: 22px; }
+    .cta-btn { font-size: 22px; }
+    .cta-btn img { width: 21px; height: 21px; }
     .cta-btn { width: 100%; min-width: auto; }
     .cta-btn::before { margin-right: auto; margin-left: -3.3px;}
     .cta-btn::after { margin-left: auto; margin-right: -6.3px;}  
