@@ -2,8 +2,11 @@
 var SPEED = 5;           // Скорость печати текста (мс)
 var SCROLL_SPEED = 3;    // Скорость прокрутки (пиксели)
 
-// Текст приглашения командной строки
-var PROMPT_TEXT = 'user@portfolio >';
+// Проверка мобильного устройства
+var isMobile = window.matchMedia('(max-width: 600px)').matches;
+
+// Текст приглашения командной строки (на мобильных без "user@portfolio")
+var PROMPT_TEXT = isMobile ? '>' : 'user@portfolio >';
 
 // Основные элементы страницы
 var terminalBody = document.querySelector('.terminal-body');
@@ -11,6 +14,13 @@ var terminalBody = document.querySelector('.terminal-body');
 // Переменные для управления прокруткой
 var isScrolling = false;
 var scrollAnimationId = null;
+
+// На мобильных заменяем содержимое промптов на короткую версию
+if (isMobile) {
+    document.querySelectorAll('.prompt').forEach(function(prompt) {
+        prompt.textContent = '>';
+    });
+}
 
 
 // Ждём загрузки шрифтов перед показом страницы
