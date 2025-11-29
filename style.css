@@ -270,6 +270,7 @@ a:hover { color: var(--text-bright); }
     .cta-btn::before { margin-right: auto; margin-left: -3.3px;}
     .cta-btn::after { margin-left: auto; margin-right: -6.3px;}  
     .footer-box .cta-buttons { flex-direction: column; gap: 10px; }
+    .prompt-user { display: none; }
 }
 
 /* Вертикальные кнопки только для очень узких экранов */
