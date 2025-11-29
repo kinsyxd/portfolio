@@ -329,3 +329,26 @@ function restoreContent(container) {
         cursor.remove();
     }
 }
+
+
+// Кнопка копирования email
+var emailButton = document.getElementById('email-btn');
+if (emailButton) {
+    emailButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        var email = emailButton.dataset.email;
+        var textSpan = emailButton.querySelector('.email-text');
+        
+        // Копируем email в буфер обмена
+        navigator.clipboard.writeText(email).then(function() {
+            // Меняем текст на "Скопировано"
+            textSpan.textContent = 'Скопировано';
+            
+            // Через 5 секунд возвращаем обратно
+            setTimeout(function() {
+                textSpan.textContent = 'E-mail';
+            }, 5000);
+        });
+    });
+}
